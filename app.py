@@ -3,6 +3,7 @@ from flask import Flask, render_template, request, session
 
 app = Flask(__name__)
 
+load_dotenv()
 API_KEY = os.getenv("API_KEY")
 
 import cohere
