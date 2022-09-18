@@ -1,7 +1,9 @@
+import os
 from flask import Flask, render_template, request, session
+
 app = Flask(__name__)
 
-from API_KEY import apiKey
+API_KEY = os.getenv("API_KEY")
 
 import cohere
 from cohere.classify import Example
