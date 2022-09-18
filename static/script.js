@@ -1,7 +1,3 @@
-// if (localStorage.getItem("points") === null) {
-//     localStorage.setItem('points', 0)
-// }
-
 document.getElementById("chatbox-icon").onclick = function (e) {
     document.getElementById('chatbox-title').style.display = "block";
     document.getElementById('toggle-form-area').style.display = "block";

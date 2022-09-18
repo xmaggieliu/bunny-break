@@ -20,7 +20,7 @@ def chat():
     inp = request.form.get('text-chat')
     print(inp)
 
-    co = cohere.Client(apiKey)
+    co = cohere.Client(API_KEY)
     response = co.classify(
     inputs=[inp],
     examples=[Example("love this movie", "positive"), 
