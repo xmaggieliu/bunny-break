@@ -75,7 +75,7 @@ body {
   padding: 10px;
 }
 
-#bunnyHead, #earRight, #earLeft, #eyeRight, #eyeLeft, #mouth, #nose {
+#bunnyHead, #earRight, #earLeft, #eyeRight, #eyeLeft, #mouth, #nose, #torso, #frontFootLeft, #frontFootRight, #tail, #hindfoot {
   z-index: 1000;
   position: absolute;
   bottom: 15rem;
@@ -85,7 +85,6 @@ body {
 }
 
 #bunnyHead {
-  position: absolute;
   bottom: 15rem;
   left: 20rem;
   scale: 70%;
@@ -124,6 +123,33 @@ body {
 #nose {
   bottom: 19rem;
   left: 25rem;
+}
+
+#frontFootLeft, #frontFootRight {
+  left: 28rem; 
+  bottom: 5rem;
+  animation: bounce 1s infinite alternate;
+}
+
+#frontFootLeft {
+  left: 23rem;
+}
+
+#tail {
+  animation: swinging 3s infinite;
+  transform-origin: 0 90%;
+  left: 35rem;
+  bottom: 8rem;
+}
+
+#torso {
+  bottom: 4.5rem;
+  left: 20rem;
+}
+
+#hindfoot {
+  left: 32rem;
+  bottom: 5.5rem;
 }
 
 /* Ground */
@@ -180,7 +206,6 @@ p {
   bottom: 0;
   right: 0;
 }
-
 
 #toggle-form-area {
   width: 300px;
